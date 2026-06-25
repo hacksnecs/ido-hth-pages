@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于华体会 · 站一点滴</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fafaf9;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.7;
+            color: #1e1e1e;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page {
+            max-width: 680px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 1rem 0 2.5rem;
+        }
+
+        /* 横幅 hero */
+        .hero {
+            border-bottom: 1px solid #eae6e0;
+            padding-bottom: 2.2rem;
+            margin-bottom: 2.8rem;
+        }
+
+        .hero-label {
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #9c8c7c;
+            margin-bottom: 0.6rem;
+            font-weight: 450;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 350;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            color: #231f1b;
+            margin: 0.2rem 0 0.6rem;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            color: #5e554b;
+            max-width: 30em;
+        }
+
+        /* 正文区 */
+        .content-section {
+            margin-bottom: 2.8rem;
+        }
+
+        .content-section h2 {
+            font-size: 1.3rem;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            border-left: 3px solid #c7b8a8;
+            padding-left: 1rem;
+            margin-bottom: 1rem;
+            color: #2c2722;
+        }
+
+        .content-section p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #2d2a26;
+            text-rendering: optimizeLegibility;
+        }
+
+        .content-section a {
+            color: #7a6b5c;
+            text-decoration: none;
+            border-bottom: 1px solid #d4c9be;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .content-section a:hover {
+            color: #3a322b;
+            border-bottom-color: #3a322b;
+        }
+
+        /* 特点摘要卡片感 */
+        .note-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 1.8rem 0 1.2rem;
+        }
+
+        .note-item {
+            background: #ffffff;
+            padding: 1.2rem 1.4rem;
+            border-radius: 0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 0 0 1px #eeebe7 inset;
+            transition: box-shadow 0.2s;
+        }
+
+        .note-item strong {
+            display: inline-block;
+            font-weight: 500;
+            color: #3e352c;
+            margin-bottom: 0.15rem;
+        }
+
+        .note-item p {
+            margin: 0.2rem 0 0;
+            font-size: 0.95rem;
+            color: #4a423a;
+        }
+
+        /* 分割装饰 */
+        .divider-light {
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #d8cfc4, transparent);
+            margin: 2.2rem 0 2.2rem;
+        }
+
+        /* FAQ 摘要区块 (极小) */
+        .faq-mini {
+            background: #f4f2ef;
+            padding: 1.5rem 1.6rem;
+            margin: 1.8rem 0;
+        }
+
+        .faq-mini h3 {
+            font-size: 1rem;
+            font-weight: 450;
+            color: #34302b;
+            margin-bottom: 0.6rem;
+        }
+
+        .faq-mini p {
+            font-size: 0.95rem;
+            color: #4e463e;
+            margin-bottom: 0.6rem;
+        }
+
+        .faq-mini p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 页尾 */
+        .footer-note {
+            margin-top: 3rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #e4ddd6;
+            font-size: 0.9rem;
+            color: #70665c;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 0.5rem;
+        }
+
+        .footer-note a {
+            color: #7a6b5c;
+            border-bottom: 1px solid #cfc4b8;
+            text-decoration: none;
+        }
+
+        .footer-note a:hover {
+            color: #2c2722;
+            border-bottom-color: #2c2722;
+        }
+
+        /* 响应式 */
+        @media (max-width: 480px) {
+            body {
+                padding: 1rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .note-item {
+                padding: 1rem 1.1rem;
+            }
+            .faq-mini {
+                padding: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+
+        <!-- 横幅介绍区 -->
+        <div class="hero">
+            <div class="hero-label">关于本站 · 背景简述</div>
+            <h1>华体会<br>与信息呈现</h1>
+            <p>一个呈现站点概貌、功能与价值的小记。没有浮夸的口号，只有平实的叙述和必要的说明。</p>
+        </div>
+
+        <!-- 第一段：站点背景与可信说明 -->
+        <div class="content-section">
+            <h2>站点的由来与定位</h2>
+            <p>
+                <strong>华体会</strong> 这个名字所指向的，并不是一个突然出现的概念，而是经过一段时间的积累与梳理后，
+                逐渐形成一个可供浏览、参考的数字空间。很多人第一次听到这个名字时，可能会觉得陌生，
+                但当你慢慢了解它背后的内容结构，就会发现它其实一直在试图做到清晰、直接、不绕弯。
+            </p>
+            <p>
+                从信息可信度的角度看，<a href="https://ido-hth.com.cn">华体会</a> 所展示的内容均经过基本的核实与分类，
+                没有任何需要隐藏的环节。本站没有浮夸的承诺，也没有诱导性的语言，所有的说明都以一种坦诚、朴素的方式呈现给每一位来访者。
+            </p>
+        </div>
+
+        <!-- 第二段：特点与日常使用场景（自然带出） -->
+        <div class="content-section">
+            <h2>常见的使用场景</h2>
+            <p>
+                不同的访问者带着不同的期待。有人希望快速了解整体框架，有人想确认某些细节是否可靠。
+                无论你是哪一种，<a href="https://ido-hth.com.cn">华体会</a> 都尽量做到内容层次分明，查阅起来不必耗费太多精力。
+            </p>
+            <div class="note-grid">
+                <div class="note-item">
+                    <strong>信息获取</strong>
+                    <p>浏览页面结构时，你可以很自然地找到自己需要的部分，没有多余的干扰项。</p>
+                </div>
+                <div class="note-item">
+                    <strong>可信说明</strong>
+                    <p>站内涉及的介绍与背景说明都经过整理，不会出现前后矛盾或含糊其辞的表述。</p>
+                </div>
+                <div class="note-item">
+                    <strong>浏览节奏</strong>
+                    <p>页面设计偏向安静、留白充裕，鼓励慢慢阅读，而不是快速划过。</p>
+                </div>
+            </div>
+            <p>
+                在日常使用中，无论是通过手机还是电脑打开，页面都会自动适配成一种舒适的阅读宽度。
+                这些细节虽然不起眼，但可以让体验更平顺一些。
+            </p>
+        </div>
+
+        <!-- 第三段：FAQ 摘要 + 补充说明 -->
+        <div class="content-section">
+            <h2>一些常见疑问</h2>
+            <div class="faq-mini">
+                <h3>这个网站主要提供什么？</h3>
+                <p>网站本身是一个信息集合与展示的页面，所有内容均围绕 <a href="https://ido-hth.com.cn">华体会</a> 这一主题展开，不涉及第三方推广或外部链接跳转。</p>
+                <h3>内容的可靠性如何？</h3>
+                <p>每一项说明都经过基本的事实核对，没有未经证实的断言。如果你发现任何存疑之处，也可以通过站内的提示进一步核实。</p>
+                <p style="font-size:0.9rem; color:#6f655b;">注：本页面只做介绍用途，不引导任何具体操作。</p>
+            </div>
+        </div>
+
+        <hr class="divider-light">
+
+        <!-- 结尾访问提示 -->
+        <div class="footer-note">
+            <span>如需进一步了解，可前往 <a href="https://ido-hth.com.cn">华体会</a> 浏览完整内容。</span>
+            <span style="font-size:0.8rem; color:#95897d;">2025 · 留白版</span>
+        </div>
+
+    </div>
+</body>
+</html>
